@@ -1,11 +1,11 @@
 @font-face {
     font-family: DINCE-Regular;
-    src: url(AcerFoco_Blk.ttf);
+    src: url(fonts/AcerFoco_Blk.ttf);
 }
 
 @font-face {
     font-family: Acer-Regular;
-    src: url(AcerFoco_Rg.ttf);
+    src: url(fonts/AcerFoco_Rg.ttf);
 }
 
 

@@ -8,47 +8,14 @@
     <meta name="author" content="Ondřej Rethy">
     <meta http-equiv="content-language" content="cs">
     <meta name="theme-color" content="#1d1d1d">
-    <link rel="icon" sizes="192x192" href="ikona.png">
+    <link rel="icon" sizes="192x192" href="pics/ikona.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://use.fontawesome.com/8ffabfa6ad.js"></script>
-    <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="smooth-scroll.js"></script>
-		<script>
-			smoothScroll.init();
-		</script>
-    <script>
-        var scrollEventHandler = function()
-{
-  window.scroll(0, window.pageYOffset)
-}
-window.addEventListener("scroll", scrollEventHandler, false);
-    </script>
-    <script>
-        function bindEvent(e, eventName, callback) {
-    if(e.addEventListener) // new browsers
-        e.addEventListener(eventName, callback, false);
-    else if(e.attachEvent) // IE
-        e.attachEvent('on'+ eventName, callback);
-};
-bindEvent(document.body, 'scroll', function(e) {
-    document.body.scrollLeft = 0;
-});
-    </script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-71275802-2', 'auto');
-  ga('send', 'pageview');
-    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <header>
     <div class="logo">
-        <img src="logo.png" class="logo" width="400px">
-        <img src="text.png" class="textlogo" width="500px">
+        <img src="pics/logo.png" class="logo" width="400px">
+        <img src="pics/text.png" class="textlogo" width="500px">
         <div class="center">
             <a href="#loading-sec" data-scroll data-options='{ "easing": "easeInQuad" }'  class="btn btn-circle">
                 <i id="button" class="fa fa-chevron-down animated"></i>
@@ -148,4 +115,37 @@ bindEvent(document.body, 'scroll', function(e) {
 <footer class="diagonal">
   <p>Made with <a style="color: #e74c3c">❤</a> in 2017 by <span style="font-family: Arial">&copy</span> Ondřej Rethy 2017</p>
 </footer>
+        <script src="https://use.fontawesome.com/8ffabfa6ad.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+		<script>
+			smoothScroll.init();
+		</script>
+    <script>
+        var scrollEventHandler = function()
+{
+  window.scroll(0, window.pageYOffset)
+}
+window.addEventListener("scroll", scrollEventHandler, false);
+    </script>
+    <script>
+        function bindEvent(e, eventName, callback) {
+    if(e.addEventListener) // new browsers
+        e.addEventListener(eventName, callback, false);
+    else if(e.attachEvent) // IE
+        e.attachEvent('on'+ eventName, callback);
+};
+bindEvent(document.body, 'scroll', function(e) {
+    document.body.scrollLeft = 0;
+});
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-71275802-2', 'auto');
+  ga('send', 'pageview');
+    </script>
 </html>
